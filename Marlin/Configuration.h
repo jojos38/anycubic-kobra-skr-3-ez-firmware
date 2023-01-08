@@ -530,7 +530,7 @@
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  *
  */
-#define TEMP_SENSOR_0 11
+#define TEMP_SENSOR_0 5
 #define TEMP_SENSOR_1 1
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -1485,7 +1485,7 @@
 #define XY_PROBE_FEEDRATE (133*60)
 
 // Feedrate (mm/min) for the first approach when double-probing (MULTIPLE_PROBING == 2)
-#define Z_PROBE_FEEDRATE_FAST (8*60)
+#define Z_PROBE_FEEDRATE_FAST (6*60)
 
 // Feedrate (mm/min) for the "accurate" probe of each point
 #define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST / 2)
@@ -1656,7 +1656,7 @@
 
 // @section homing
 
-#define NO_MOTION_BEFORE_HOMING // Inhibit movement until all axes have been homed. Also enable HOME_AFTER_DEACTIVATE for extra safety.
+//#define NO_MOTION_BEFORE_HOMING // Inhibit movement until all axes have been homed. Also enable HOME_AFTER_DEACTIVATE for extra safety.
 #define HOME_AFTER_DEACTIVATE   // Require rehoming after steppers are deactivated. Also enable NO_MOTION_BEFORE_HOMING for extra safety.
 
 /**
@@ -1690,10 +1690,10 @@
 #define Y_BED_SIZE 220
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
-#define X_MIN_POS -50.0
-#define Y_MIN_POS -13.0
+#define X_MIN_POS -37.2
+#define Y_MIN_POS -0.2
 #define Z_MIN_POS 0
-#define X_MAX_POS 224
+#define X_MAX_POS 237
 #define Y_MAX_POS 222
 #define Z_MAX_POS 250
 //#define I_MIN_POS 0
