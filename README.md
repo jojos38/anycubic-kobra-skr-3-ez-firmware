@@ -22,7 +22,6 @@ This is a custom Marlin firmware that was build to work with:
 - BTT filament runout sensor
 
 You are free to reuse and pick parts of this config as you wish
-If you take the entire config as is and republish it please credit me
 
 ## License
 
